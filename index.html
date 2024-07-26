@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-triangles@3/tsparticles.preset.triangles.bundle.min.js"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <div class="container">
+        <h1>Generate Random Quote</h1>
+        <select name="category" id="category">
+            <option value="">Select Category</option>
+            <option value="alone">Alone</option>
+            <option value="amazing">Amazing</option>
+            <option value="anger">Anger</option>
+            <option value="art">Art</option>
+            <option value="attitude">Attitude</option>
+            <option value="beauty">Beauty</option>
+            <option value="best">Best</option>
+            <option value="birthday">Birthday</option>
+            <option value="change">Change</option>
+            <option value="cool">Cool</option>
+            <option value="courage">Courage</option>
+            <option value="death">Death</option>
+            <option value="dreams">Dreams</option>
+            <option value="education">Education</option>
+            <option value="environmental">Environmental</option>
+            <option value="failure">Failure</option>
+            <option value="faith">Faith</option>
+            <option value="family">Family</option>
+            <option value="famous">Famous</option>
+            <option value="fear">Fear</option>
+            <option value="fitness">Fitness</option>
+            <option value="food">Food</option>
+            <option value="forgiveness">Forgiveness</option>
+            <option value="freedom">Freedom</option>
+            <option value="friendship">Friendship</option>
+            <option value="funny">Funny</option>
+            <option value="future">Future</option>
+            <option value="god">God</option>
+            <option value="happiness">Happiness</option>
+            <option value="health">Health</option>
+            <option value="home">Home</option>
+            <option value="hope">Hope</option>
+            <option value="humor">Humor</option>
+            <option value="imagination">Imagination</option>
+            <option value="inspirational">Inspirational</option>
+            <option value="intelligence">Intelligence</option>
+            <option value="jealousy">Jealousy</option>
+            <option value="knowledge">Knowledge</option>
+            <option value="leadership">Leadership</option>
+            <option value="learning">Learning</option>
+            <option value="life">Life</option>
+            <option value="love">Love</option>
+            <option value="marriage">Marriage</option>
+            <option value="men">Men</option>
+            <option value="mom">Mom</option>
+            <option value="money">Money</option>
+            <option value="morning">Morning</option>
+            <option value="success">Success</option>
+        </select>
+        <blockquote id="quote"></blockquote>
+        <span id="author"></span>
+        <hr/>
+        <div class="buttons">
+            <div class="links">
+                <img src="/media/twitter.png" onclick="tweet()" alt="">
+                <!-- <img src="/media/facebook.png" alt=""> -->
+                <img src="/media/copy (1).png" onclick="copyQuote()" alt="">
+                <img src="/media/volume-2.png" id="speaker" alt="">
+            </div>
+            <button id="new-quote" onclick="generate()">New Quote</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
